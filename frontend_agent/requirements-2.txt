@@ -1,0 +1,41 @@
+flower-shop-frontend/
+├── src/
+│   ├── api/
+│   │   ├── client.ts          # Axios инстанс с JWT
+│   │   ├── auth.ts            # Запросы авторизации
+│   │   ├── bouquets.ts        # Запросы каталога
+│   │   └── orders.ts          # Запросы заказов
+│   ├── components/
+│   │   ├── layout/
+│   │   │   ├── Header.tsx
+│   │   │   └── Footer.tsx
+│   │   ├── ui/
+│   │   │   ├── Button.tsx
+│   │   │   ├── Badge.tsx
+│   │   │   └── Toast.tsx
+│   │   ├── BonusWidget.tsx
+│   │   ├── LoyaltyProgress.tsx
+│   │   ├── OrderHistory.tsx
+│   │   ├── PaymentForm.tsx
+│   │   └── ProductCard.tsx
+│   ├── hooks/
+│   │   ├── useLoyalty.ts
+│   │   └── useYooKassa.ts
+│   ├── pages/
+│   │   ├── HomePage.tsx
+│   │   ├── ProductPage.tsx
+│   │   ├── CartPage.tsx
+│   │   ├── CheckoutPage.tsx
+│   │   ├── AccountPage.tsx
+│   │   └── AuthPage.tsx
+│   ├── store/
+│   │   ├── cartStore.ts
+│   │   ├── userStore.ts
+│   │   └── bonusStore.ts
+│   ├── types/
+│   │   └── index.ts
+│   ├── App.tsx
+│   └── main.tsx
+├── tailwind.config.ts
+├── vite.config.ts
+└── package.json
