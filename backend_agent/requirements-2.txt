@@ -1,0 +1,37 @@
+flower-shop-backend/
+├── app/
+│   ├── core/
+│   │   ├── config.py          # Настройки из .env
+│   │   ├── database.py        # Подключение к PostgreSQL
+│   │   ├── security.py        # JWT + bcrypt
+│   │   └── dependencies.py    # Зависимости FastAPI (get_current_user и др.)
+│   ├── models/
+│   │   ├── __init__.py
+│   │   ├── user.py
+│   │   ├── bouquet.py
+│   │   ├── order.py
+│   │   └── payment.py
+│   ├── schemas/
+│   │   ├── auth.py
+│   │   ├── bouquet.py
+│   │   ├── order.py
+│   │   ├── payment.py
+│   │   └── user.py
+│   ├── routers/
+│   │   ├── auth.py
+│   │   ├── bouquets.py
+│   │   ├── orders.py
+│   │   ├── payments.py
+│   │   └── users.py
+│   ├── services/
+│   │   ├── bonus.py
+│   │   └── yoomoney.py
+│   └── main.py
+├── alembic/
+│   ├── env.py
+│   └── versions/
+│       └── 001_initial_migration.py
+├── .env.example
+├── docker-compose.yml
+├── Dockerfile
+└── requirements.txt
